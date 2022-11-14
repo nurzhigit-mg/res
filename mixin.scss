@@ -1,0 +1,18 @@
+@mixin between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin btn{
+  background: #3D5675;
+  border-radius: 44px;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+}
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
