@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+  #header .header--block__menuss {
+    font-size: 11px;
+  }
+  #hero .hero--title {
+   max-width: 75%;
+  }
+  .flip-container, .front, .back {
+    width: 318px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1140px) {
+  #header .header--block__menuss {
+    font-size: 10px;
+  }
+  #hero .hero--title {
+    width: 73vh;
+  }
+  .flip-container {
+    margin: 20px 0 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #hero {
+    height: 600px;
+  }
+  #header .header--block__menuss {
+    font-size: 6px;
+    max-width: 80%;
+  }
+
+}
+@media (max-width: 992px) {
+  .flip-container {
+    margin: 20px 0 0 -10px;
+  }
+  #hero .hero--img {
+    margin-left: -20px;
+  }
+  #header .header--block__menu {
+    margin: 0 0 0 175px;
+    font-size: 10px;
+  }
+  #header .header--block__menuss {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .hero--img {
+    width: 68%;
+  }
+  .header{
+    display: none !important;
+  }
+  #hero .hero {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+  #hero .hero--img {
+    width: 69% !important;
+  }
+  #product .product--block__log {
+    font-size: 23px;
+  }
+  #product .product--menu {
+    display: flex !important;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    flex-direction: column;
+    text-align: center;
+  }
+  #product .product--svg h1 {
+    font-size: 11px;
+    margin: 0 0 0 -85px!important;
+  }
+  #header .header--block__menu {
+    margin: 0 0 0 137px;
+  }
+  .burgerLine {
+
+    position: absolute;
+    left: 95%;
+  }
+
+  .burgerIcon {
+    font-size: 20px;
+    color: rgba(12, 23, 224, 0.62);
+  }
+
+  .burgerClose {
+    font-size: 25px;
+    color: rgb(243, 108, 10);
+    position: absolute;
+    left: 95%;
+  }
+
+  .burgerBlock {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(4, 6, 42, 0.62);
+    position: absolute;
+    left: 0;
+    display: none;
+
+
+  }
+  .burger {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  #burgerCheck:checked ~ .burgerBlock {
+
+    display: block;
+  }
+
+  #burgerCheck:checked ~ .burgerLine {
+    display: none;
+  }
+
+  .menuBurger {
+    font-size: 40px;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .menuBurger a {
+    font-size: 20px;
+    color: orange;
+    text-transform: uppercase;
+    margin: 40px 0 40px 0;
+  }
+  .menuBurger a:hover {
+
+    border-bottom: 3px solid #f36c0a;
+  }
+
+}

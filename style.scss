@@ -1,9 +1,11 @@
 @import "reset";
 @import "mixin";
 @import "verables";
+@import "media";
 
 #header {
   margin: 20px;
+
 
   .header {
     &--block {
@@ -13,6 +15,16 @@
 
       &__icon {
         margin: 4px 10px 0 150px;
+        animation: 2s keyIcon linear infinite;
+      }
+
+      @keyframes keyIcon {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
 
       &__menuss {
@@ -21,7 +33,8 @@
         width: 50%;
         @include between
       }
-      &__menuss a:hover{
+
+      &__menuss a:hover {
         border-bottom: 3px solid #011F3A;
       }
 
@@ -43,25 +56,26 @@
     }
   }
 }
+
 #hero {
-  height: 505px;
+
   background: #F2AE4D;
 
   .hero {
-    @include center;
+    @include around;
+
+    &--block {
+      width: 35%;
+    }
 
     &--title {
-
-      width: 50%;
       font-weight: 400;
-      font-size: 48px;
+      font-size: 40px;
       line-height: 56px;
       color: $colorBlue
-
     }
 
     &--text {
-      width: 30%;
       font-weight: 400;
       font-size: 15px;
       line-height: 24px;
@@ -81,7 +95,20 @@
     }
 
     &--img {
+      width: 50%;
     }
+
+  }
+}
+
+#product {
+  background: white;
+  margin: 100px 0 20px 0;
+
+  .product {
+    &--img {
+    }
+
     &--svg {
       display: flex;
       justify-content: space-around;
@@ -96,15 +123,10 @@
 
       }
     }
-  }
-}
-#product {
-  background: white;
-  margin: 100px 0 20px 0;
 
-  .product {
     &--menu {
-
+      width: 100%;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -165,25 +187,54 @@
 
   }
 }
-#order{
-  .order{
-    &--block{
+
+#order {
+  .order {
+    &--block {
       height: 774px;
       background: #72BDA3;
-      &__img{
+
+      &__img {
+
         @include between;
+burgermenu
+
+        &--link {
+          h1 {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.36px;
+            color: $colorBlue;
+          }
+
+          h2 {
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            color: $colorBlue;
+
         &--link{
           h1{
             @include text;
           }
           h2{
             @include mini-text
+main
           }
         }
       }
-      &__text{
+
+      &__text {
         padding: 90px 0;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
@@ -191,14 +242,16 @@
         text-align: center;
         color: $colorBlue;
       }
-      &__btn{
+
+      &__btn {
         @include center;
         padding: 60px 0;
-        button{
+
+        button {
           background: $colorBlue;
           width: 220px;
           height: 44px;
-          font-family: 'Roboto',sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 14px;
