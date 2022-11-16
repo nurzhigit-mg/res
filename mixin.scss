@@ -1,10 +1,10 @@
-@mixin between {
+@mixin between{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-@mixin btn {
+@mixin btn{
+  cursor: pointer;
   background: #3D5675;
   border-radius: 44px;
   border: none;
@@ -12,8 +12,7 @@
   padding: 10px 30px;
   text-align: center;
 }
-
-@mixin center {
+@mixin center{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,20 +24,31 @@
   align-items: center;
 }
 
-  @mixin text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.36px;
-    color: $colorBlue;
-  }
-  @mixin mini-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    text-align: center;
-    color: $colorBlue;
-  }
+@mixin text{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: $colorBlue;
+}
+@mixin mini-text{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: $colorBlue;
+}
+@mixin a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 35px;
+}
+@mixin start{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
