@@ -132,10 +132,7 @@
       @include between;
 
       &__log {
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
-        color: $colorBlue;
+        @include big-text;
       }
 
       &__btn {
@@ -180,10 +177,15 @@
 #order {
   .order {
     &--block {
-
       height: 774px;
       background: #72BDA3;
-
+      &__img{
+        @include between;
+        &--link{
+          h1{
+            @include text;
+          }
+          h2{
       &__img {
         @include around;
 
@@ -223,7 +225,7 @@
         font-size: 32px;
         line-height: 41px;
         text-align: center;
-        color: $colorBlue;
+        @include big-text;
       }
 
       &__btn {
@@ -247,7 +249,10 @@
           border: none;
           transition: 2s;
         }
-
+        button:focus{
+          width: 250px;
+          height: 50px;
+          background:#FFFFFF;
         button:focus {
           width: 250px;
           height: 50px;
@@ -258,6 +263,30 @@
     }
   }
 }
+#ark{
+  .ark{
+    &--block{
+      h1{
+        margin: 50px 0;
+        font-family: 'Roboto',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+        color: $colorBlue;
+      }
+      &__link{
+        padding: 0 0 100px 0;
+        @include between;
+        &--img{
+          h1{
+            @include text;
+          }
+          h2{
+            @include mini-text;
+          }
+        }
+
 
 #ark {
   .ark {
@@ -289,7 +318,6 @@
     }
   }
 }
-
 #like {
   .like {
     height: 610px;
@@ -304,6 +332,19 @@
       height: 410px;
       background: rgba(161, 161, 161, 0.4);
     }
+    &--block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1{
+        @include text;
+      }
+      h2{
+        @include mini-text;
+        padding: 0 0 10px 0;
+      }
+      button{
+        font-family: 'Roboto',sans-serif;
 
     &--block {
       display: flex;
@@ -325,12 +366,20 @@
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 1.96px;
+        color:#3D5675;
         color: #3D5675;
         height: 44px;
         width: 204px;
         background: #FFFFFF;
         border-radius: 44px;
         border: none;
+        transition: 2s;
+      }
+      button:focus{
+        height: 50px;
+        width: 250px;
+        border-radius:10px;
+        background:#3D5675;
         cursor: pointer;
         transition: 2s;
       }
@@ -341,6 +390,112 @@
         border-radius: 10px;
         background: #3D5675;
         color: #FFFFFF;
+      }
+    }
+  }
+}
+#area{
+  .area{
+    &--start-text{
+      @include big-text;
+      text-align: center;
+      padding: 50px 0;
+    }
+    &--block{
+      height: 1306px;
+      background: #FFFFFF;
+      &__first{
+        padding: 85px 0;
+        display: flex;
+        justify-content: space-evenly;
+        &--img{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      &__second{
+        padding-top: 50px;
+        display: flex;
+        &--div{
+          @include center;
+          &__text{
+            padding: 0 150px;
+            h4{
+              text-align: center;
+              font-family: 'Lato',sans-serif;
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 32px;
+              color: $colorBlue;
+              padding: 20px 0;
+            }
+            &--link{
+              display: flex;
+              &__follow{
+                padding: 0 10px;
+                h2{
+                  font-family: 'Lato',sans-serif;
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 24px;
+                  color: $colorBlue;
+                }
+                h3{
+                  font-family: 'Lato',sans-serif;
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 24px;
+                  color: $colorBlue;
+                }
+              }
+              button{
+                font-family: 'Roboto',sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 1.96px;
+                color: #3D5675;
+                height: 44px;
+                width: 160px;
+                background: #F2F2F2;
+                border-radius: 44px;
+                border: none;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    &--end-text{
+      @include big-text;
+      text-align: center;
+      padding: 50px 0;
+    }
+    &--btn{
+      @include center;
+      button{
+        margin: 0 5px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.96px;
+        background:#3D5675;
+        color: #FFFFFF;
+        height: 44px;
+        width: 247px;
+        border-radius: 44px;
+        border: none;
+        transition: 2s;
+      }
+      button:focus{
+        height: 44px;
+        width: 247px;
+        border-radius: 44px;
+        color:#3D5675;
+        background: #FFFFFF;
       }
     }
   }
