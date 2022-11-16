@@ -116,10 +116,7 @@
       @include between;
 
       &__log {
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
-        color: $colorBlue;
+        @include big-text;
       }
 
       &__btn {
@@ -183,13 +180,8 @@
       }
       &__text{
         padding: 90px 0;
-        font-family: 'Roboto',sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 41px;
         text-align: center;
-        color: $colorBlue;
+        @include big-text;
       }
       &__btn{
         @include center;
@@ -293,6 +285,112 @@
         border-radius:10px;
         background:#3D5675;
         color: #FFFFFF;
+      }
+    }
+  }
+}
+#area{
+  .area{
+    &--start-text{
+      @include big-text;
+      text-align: center;
+      padding: 50px 0;
+    }
+    &--block{
+      height: 1306px;
+      background: #FFFFFF;
+      &__first{
+        padding: 85px 0;
+        display: flex;
+        justify-content: space-evenly;
+        &--img{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      &__second{
+        padding-top: 50px;
+        display: flex;
+        &--div{
+          @include center;
+          &__text{
+            padding: 0 150px;
+            h4{
+              text-align: center;
+              font-family: 'Lato',sans-serif;
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 32px;
+              color: $colorBlue;
+              padding: 20px 0;
+            }
+            &--link{
+              display: flex;
+              &__follow{
+                padding: 0 10px;
+                h2{
+                  font-family: 'Lato',sans-serif;
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 24px;
+                  color: $colorBlue;
+                }
+                h3{
+                  font-family: 'Lato',sans-serif;
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 24px;
+                  color: $colorBlue;
+                }
+              }
+              button{
+                font-family: 'Roboto',sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 1.96px;
+                color: #3D5675;
+                height: 44px;
+                width: 160px;
+                background: #F2F2F2;
+                border-radius: 44px;
+                border: none;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    &--end-text{
+      @include big-text;
+      text-align: center;
+      padding: 50px 0;
+    }
+    &--btn{
+      @include center;
+      button{
+        margin: 0 5px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.96px;
+        background:#3D5675;
+        color: #FFFFFF;
+        height: 44px;
+        width: 247px;
+        border-radius: 44px;
+        border: none;
+        transition: 2s;
+      }
+      button:focus{
+        height: 44px;
+        width: 247px;
+        border-radius: 44px;
+        color:#3D5675;
+        background: #FFFFFF;
       }
     }
   }

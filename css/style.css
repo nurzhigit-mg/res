@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+body {
+  background: #EEEEEE;
+}
+
 a {
   text-decoration: none;
 }
@@ -171,9 +175,10 @@ a {
   align-items: center;
 }
 #product .product--block__log {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 41px;
   color: #011F3A;
 }
 #product .product--block__btn {
@@ -242,12 +247,11 @@ a {
 }
 #order .order--block__text {
   padding: 90px 0;
+  text-align: center;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 41px;
-  text-align: center;
   color: #011F3A;
 }
 #order .order--block__btn {
@@ -369,6 +373,120 @@ a {
   border-radius: 10px;
   background: #3D5675;
   color: #FFFFFF;
+}
+
+#area .area--start-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  color: #011F3A;
+  text-align: center;
+  padding: 50px 0;
+}
+#area .area--block {
+  height: 1306px;
+  background: #FFFFFF;
+}
+#area .area--block__first {
+  padding: 85px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#area .area--block__first--img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#area .area--block__second {
+  padding-top: 50px;
+  display: flex;
+}
+#area .area--block__second--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#area .area--block__second--div__text {
+  padding: 0 150px;
+}
+#area .area--block__second--div__text h4 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #011F3A;
+  padding: 20px 0;
+}
+#area .area--block__second--div__text--link {
+  display: flex;
+}
+#area .area--block__second--div__text--link__follow {
+  padding: 0 10px;
+}
+#area .area--block__second--div__text--link__follow h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #011F3A;
+}
+#area .area--block__second--div__text--link__follow h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #011F3A;
+}
+#area .area--block__second--div__text--link button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.96px;
+  color: #3D5675;
+  height: 44px;
+  width: 160px;
+  background: #F2F2F2;
+  border-radius: 44px;
+  border: none;
+}
+#area .area--end-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  color: #011F3A;
+  text-align: center;
+  padding: 50px 0;
+}
+#area .area--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#area .area--btn button {
+  margin: 0 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.96px;
+  background: #3D5675;
+  color: #FFFFFF;
+  height: 44px;
+  width: 247px;
+  border-radius: 44px;
+  border: none;
+  transition: 2s;
+}
+#area .area--btn button:focus {
+  height: 44px;
+  width: 247px;
+  border-radius: 44px;
+  color: #3D5675;
+  background: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
