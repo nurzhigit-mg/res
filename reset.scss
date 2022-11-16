@@ -9,7 +9,11 @@
 }
 
 a {
+  color: #011F3A;
   text-decoration: none;
+}
+a:hover{
+  border-bottom: 3px solid #011F3A;
 }
 
 .log {
@@ -31,7 +35,7 @@ a {
 .flip {
   position: relative;
   transform-style: preserve-3d;
-  transition: 0.6s;
+  transition:1s;
 }
 
 .front, .back {
@@ -140,6 +144,5 @@ figure {
   margin: 40px 0 40px 0;
 }
 .menuBurger a:hover {
-
   border-bottom: 3px solid #f36c0a;
 }

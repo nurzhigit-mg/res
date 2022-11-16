@@ -9,7 +9,12 @@
 }
 
 a {
+  color: #011F3A;
   text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 3px solid #011F3A;
 }
 
 .log {
@@ -31,7 +36,7 @@ a {
 .flip {
   position: relative;
   transform-style: preserve-3d;
-  transition: 0.6s;
+  transition: 1s;
 }
 
 .front, .back {
@@ -338,17 +343,19 @@ figure {
   margin: 20px 0;
 }
 #hero .hero--btn {
+  transition: 2s;
   margin: 20px 0;
+  cursor: pointer;
   background: #3D5675;
   border-radius: 44px;
   border: none;
   color: white;
   padding: 10px 30px;
   text-align: center;
-  cursor: pointer;
 }
 #hero .hero--btn:hover {
-  transform: scale(1.2);
+  background: white;
+  color: #011F3A;
 }
 #hero .hero--img {
   width: 50%;
@@ -390,11 +397,11 @@ figure {
   color: #011F3A;
 }
 #product .product--block__btn {
-  cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
   background: #3D5675;
   border-radius: 44px;
   border: none;
@@ -433,10 +440,18 @@ figure {
 }
 #order .order--block__img {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #order .order--block__img--link h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #011F3A;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -446,6 +461,13 @@ figure {
   color: #011F3A;
 }
 #order .order--block__img--link h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #011F3A;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -574,6 +596,7 @@ figure {
   background: #FFFFFF;
   border-radius: 44px;
   border: none;
+  cursor: pointer;
   transition: 2s;
 }
 #like .like--block button:focus {
@@ -582,6 +605,79 @@ figure {
   border-radius: 10px;
   background: #3D5675;
   color: #FFFFFF;
+}
+
+#footer {
+  padding: 50px;
+  background: #F2F3F4;
+}
+#footer .footer--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #011F3A;
+}
+#footer .footer--menu__one {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer--menu__two {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer--menu__three {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer--menu__three--icon {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+#footer .footer--menu__four {
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer--menu__four h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 35px;
+}
+#footer .footer--menu__four--input {
+  color: rgba(61, 86, 117, 0.4);
+  width: 200px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  border: none;
+  padding: 5px 0 5px 10px;
+  margin: 20px 0 20px 0;
+}
+#footer .footer--menu__four--btn {
+  cursor: pointer;
+  background: #3D5675;
+  border-radius: 44px;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+}
+#footer .footer--menu__four--btn:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
